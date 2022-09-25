@@ -1,0 +1,8 @@
+00000000
+00002083 //reg[1] = data[1]，reg_write_wb=1, wreg_addr_wb=1, reg_wdata=2
+00402103 //reg[2] = data[2]，reg_write_wb=1, wreg_addr_wb=2, reg_wdata=1
+002081B3 //reg[3] = reg[1] +reg[2], reg_write_wb=1, wreg_addr_wb=3, reg_wdata=3
+40208233 //reg[4] = reg[1] - reg[2], reg_write_wb=1, wreg_addr_wb=4, reg_wdata=1
+00410263 //if(reg[4] == reg[2]) pc+8, branch_m=1, zero_m=1, pc_nxt=1c
+003021A3 // data[3] =reg[1]
+004021A3 //data[3] = reg[2], read_2_data_m=1, mem_write_m=1, alu_result_m=3
