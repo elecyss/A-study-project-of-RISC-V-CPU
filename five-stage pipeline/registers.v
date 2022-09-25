@@ -35,43 +35,5 @@ begin
         read_2_data = registers[read_2_addr];
 end
 
-/*integer i; 
-initial
-begin
-    for (i=0; i<`REG_QUAN; i=i+1) 
-        registers[i] = 32'd0; 
-end*/
-
-/*genvar   i;
-		generate for(i=0;i<32;i=i+1)
-		begin
-		     always @(posedge clk or negedge rstn)begin
-			     if(~rstn)
-				    registers[i] <= 32'd0;
-				 else if(write_en && (write_addr != `CPU_WIDTH'b0))
-				    registers[write_addr] <= write_data;
-			 end
-		end
-		endgenerate*/
-      
-
-/*genvar i;
-generate for(i=0; i<`REG_QUAN; i=i+1)
-begin: re
-    always@(*)
-    begin
-        registers[i] = 32'b0;
-        if(write_en && (write_addr != `CPU_WIDTH'b0))
-            registers[write_addr] = write_data;
-    end
-end
-endgenerate*/
-/*always@(*)
-begin
-    if(write_en && (write_addr != `CPU_WIDTH'b0))
-        registers[write_addr] <= write_data;
-end*/
-
-
 endmodule
 
