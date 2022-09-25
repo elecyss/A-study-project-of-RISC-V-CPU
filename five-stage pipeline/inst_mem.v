@@ -1,10 +1,3 @@
-//----------------------------------------------------------
-//Filename        :inst_mem.v
-//Created         :2022-08-21
-//Last Modified   :2022-08-21 15:45
-//Description     :Instruction memory
-//----------------------------------------------------------
-
 `include "./riscv_define.v"
 module inst_mem(
 //input                           clk,
